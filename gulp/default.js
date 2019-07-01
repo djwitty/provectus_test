@@ -6,11 +6,7 @@ gulp.task('default', function() {
         'build',
         [
             'sass:watch',
-            'fonts:watch',
-            'js:watch',
-            'html:watch',
-            "img:watch",
-            "libs:watch"
+            'html:watch'
         ],
         'server'
     );

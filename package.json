@@ -61,5 +61,8 @@
     "node-sass-tilde-importer": "^1.0.2",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
   }
 }

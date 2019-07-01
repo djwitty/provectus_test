@@ -1,2 +1,58 @@
-@import components/variables
-@import page/index
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+body
+    margin: 0
+    padding: 0
+    background-color: transparent
+    font-family: 'Open Sans', sans-serif
+.right
+    text-align: right
+.center
+    text-align: center
+.flex
+    display: flex
+.flex-center
+    justify-content: center
+.header-images
+    flex-wrap: wrap
+nav.main-menu
+    height: 100px
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
+    -moz-box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
+    box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
+nav.main-menu a
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 80px
+    font-size: 18px
+    font-family: 'Open Sans', sans-serif
+    font-weight: 300
+    text-transform: uppercase
+    color: #000
+    &:first-child
+        margin: 0
+li.main-menu-item > a
+    text-transform: uppercase
+    text-decoration: none
+    text-align: center
+    padding: 0 20px
+.content .main-box
+    height: auto
+    padding: 150px 0
+.content .main-box h1
+    font-family: 'Open Sans', sans-serif
+    padding: 0 0 50px
+.content .main-box button
+    border: 0 none
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    padding: 20px
+
+// Footer
+footer
+    height: 70px
+    background-color: #ccc
+    align-items: center
+    color: #555559
+    font-size: 14px
