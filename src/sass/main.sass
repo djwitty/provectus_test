@@ -4,55 +4,129 @@ body
     padding: 0
     background-color: transparent
     font-family: 'Open Sans', sans-serif
+    font-weight: 300
+    font-size: 24px
+    color: #555559
+.wrapper
+    min-width: 640px
+.left
+    float: left
 .right
+    float: right
+.text-right
     text-align: right
-.center
+.text-center
     text-align: center
 .flex
     display: flex
 .flex-center
     justify-content: center
-.header-images
-    flex-wrap: wrap
+.header
+    background: url('../img/header_bg.jpg') repeat-x 0 0
+    height: 581px
 nav.main-menu
     height: 100px
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
-    -moz-box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
-    box-shadow: 0px 4px 4px 0px rgba(204,204,204,1)
+    padding-top: 481px
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5)
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5)
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2)
 nav.main-menu a
     display: flex
     justify-content: center
     align-items: center
     margin-left: 80px
-    font-size: 18px
+    font-size: 20px
     font-family: 'Open Sans', sans-serif
-    font-weight: 300
-    text-transform: uppercase
-    color: #000
-    &:first-child
-        margin: 0
-li.main-menu-item > a
+    font-weight: 600
     text-transform: uppercase
     text-decoration: none
-    text-align: center
-    padding: 0 20px
-.content .main-box
+    color: #2e2e2e
+    &:first-child
+        margin: 0
+    &:hover
+        text-decoration: underline
+.content
+    padding-top: 10px
+.content .intro
     height: auto
-    padding: 150px 0
-.content .main-box h1
-    font-family: 'Open Sans', sans-serif
+    padding: 120px 0
+    background-color: #fbfafa
+.content .intro h1
+    font-weight: 300
+    font-size: 56px
     padding: 0 0 50px
-.content .main-box button
+    color: #555559
+.content .intro a
     border: 0 none
     -webkit-border-radius: 10px
     -moz-border-radius: 10px
     border-radius: 10px
     padding: 20px
+    background-color: #286782
+    color: #fff
+    font-size: 20px
+    font-weight: 600
+    text-decoration: none
+    outline: 0 none
+.content .sections
+    & > section
+        width: 100%
+        border-collapse: collapse
+    & > section > .desc
+        display: table-cell
+        vertical-align: middle
+        width: 50%
+        padding: 0
+        & > h2
+            margin: 0 10% 2em 75px
+            padding: 0 0 0 55px
+            background: url('../img/header_bg.png') no-repeat left center
+            font-weight: 700
+            font-size: 1em
+            color: #555559
+        & > p
+            margin: 0 17% 0 130px
+            font-size: 1em
+    & > section > .section_bg
+        display: table-cell
+        & > img
+            width: 100%
+            margin: 0 0 -5px
+    & > .section_01 > .desc > h2
+        background-image: url('../img/header_bg_active.png')
+.insta
+    position: absolute
+    top: 15px
+    right: 30px
+    color: #fff
+    font-weight: 600
+    font-size: 15.24
+    padding-left: 25px
+    background: url('../img/instagram_icon.png') no-repeat left center
 
 // Footer
 footer
-    height: 70px
+    padding: 35px 20px
     background-color: #ccc
-    align-items: center
     color: #555559
     font-size: 14px
+    & a
+        text-decoration: none
+        color: #555559
+    & span
+        padding: 0 10px
+
+// Queries
+@media (max-width: 1360px)
+    body
+        font-size: 20px
+@media (max-width: 960px)
+    body
+        font-size: 16px
+    body .desc h2
+        background-image: none !important
+        margin: 0 15% 1em !important
+        padding: 0 !important
+    body .desc p
+        margin: 0 15% !important
+
