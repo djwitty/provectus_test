@@ -5,6 +5,6 @@ gulp.task('build', function() {
     runSequence(
         'sass',
         'html',
-        'libs'
+        'img'
     );
 });
